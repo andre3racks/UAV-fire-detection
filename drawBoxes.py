@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 import cv2
 from matplotlib.widgets import RectangleSelector
-# from generate_xml import write_xml
+from generateXML  import writeXML
 
 # globals
 image  = None
@@ -35,6 +35,7 @@ def clickCallback(click, release):
 	# note: this assumes that we start by clicking from the top left
 	topLeftMouseClicks.append((int(click.xdata), int(click.ydata))) 
 	bottomRightMouseClicks.append((int(release.xdata), int(release.ydata)))
+	objectsInImage.append(obj)
 
 # callback that will happen when we press the 'q' key
 def keyPressCallback(event):
@@ -47,8 +48,6 @@ def keyPressCallback(event):
 
 	# if the 'q' key was hit
 	if event.key == 'q':
-
-		print(topLeftMouseClicks, bottomRightMouseClicks)
 
 		# clear the data
 		image = None
