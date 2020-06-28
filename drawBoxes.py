@@ -20,6 +20,45 @@ imageFolder = 'images' # where the images are
 saveDirectory = 'annotations' # where the annotations are saved
 obj = 'fire' # the object we're looking for
 
+# activate the toggle selector recursively
+def toggleSelector(event):
+	toggleSelector.RS.set_active(True)
+
+# callback function that gets called on each click
+def clickCallback(click, release):
+
+	# reference the global lists, so that we can modify them
+	global topLeftMouseClicks
+	global bottomRightMouseClicks
+
+	# append the click and release data 
+	# note: this assumes that we start by clicking from the top left
+	topLeftMouseClicks.append((int(click.xdata), int(click.ydata))) 
+	bottomRightMouseClicks.append((int(release.xdata), int(release.ydata)))
+
+# callback that will happen when we press the 'q' key
+def keyPressCallback(event):
+
+	# reference the global lists, so that we can use them in callback
+	global objectsInImage
+	global topLeftMouseClicks
+	global bottomRightMouseClicks
+	global image
+
+	# if the 'q' key was hit
+	if event.key == 'q':
+
+		print(topLeftMouseClicks, bottomRightMouseClicks)
+
+		# clear the data
+		image = None
+		topLeftMouseClicks = []
+		bottomRightMouseClicks = []
+
+		# close the plot
+		plt.close()
+
+
 if __name__ == '__main__':
 
 	# iterate through all the images in the folder
@@ -33,6 +72,25 @@ if __name__ == '__main__':
 		# convert colors since cv2 and matplot lib have different color schemes
 		tempImage = cv2.cvtColor(tempImage, cv2.COLOR_BGR2RGB)
 
-		# show the images
-		axis.imshow(tempImage) 
+
+
+		# setup the rectangle selector
+		toggleSelector.RS = RectangleSelector(
+			axis,
+			clickCallback,
+			drawtype = 'box',
+			useblit = True,
+			button = [1], # 1 means left mouse click
+			minspanx = 5, # value reccomended by matplotlib site
+			minspany = 5, # value reccomended by matplotlib site
+			spancoords = 'pixels',
+			interactive = True
+		)
+
+		#connect the events to the toggleSelector and the keyPress callbacks
+		box = plt.connect('key_press_event', toggleSelector)
+		key = plt.connect('key_press_event', keyPressCallback)
+
+		# show the image
+		axis.imshow(tempImage)
 		plt.show()
