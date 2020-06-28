@@ -3,7 +3,7 @@
 import os
 import cv2
 from lxml import etree
-import xml.etree.cElementTree as ET
+import xml.etree.ElementTree as ET
 
 def writeXML(folder, image, objectsInImage, topLeftMouseClicks, bottomRightMouseClicks, saveDirectory):
 	
@@ -16,7 +16,7 @@ def writeXML(folder, image, objectsInImage, topLeftMouseClicks, bottomRightMouse
 	height, width, depth = tempImage.shape
 
 	# create the highest level tag and name it 'annotation'
-	annotation = ET.element('annotation')
+	annotation = ET.Element('annotation')
 
 	# create a folder sublabel tag, and the value to folder
 	ET.SubElement(annotation, 'folder').text = folder
@@ -66,11 +66,10 @@ def writeXML(folder, image, objectsInImage, topLeftMouseClicks, bottomRightMouse
 	# format the data with pretty print
 	xmlString = etree.tostring(root, pretty_print=True)
 
+	# create a save path for the data
+	savePath = os.path.join(saveDirectory, image.name.replace('png', 'xml'))
 
-
-
-
-
-
-
+	# open and write to the file
+	with open (savePath, 'wb') as tempXML:
+		tempXML.write(xmlString)
 

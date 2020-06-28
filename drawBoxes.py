@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 import cv2
 from matplotlib.widgets import RectangleSelector
-from generateXML  import writeXML
+from generateXML import writeXML
 
 # globals
 image  = None
@@ -49,6 +49,15 @@ def keyPressCallback(event):
 	# if the 'q' key was hit
 	if event.key == 'q':
 
+		writeXML(
+			imageFolder,
+		 	image,
+		 	objectsInImage,
+		 	topLeftMouseClicks,
+		 	bottomRightMouseClicks,
+		 	saveDirectory
+		 )
+
 		# clear the data
 		image = None
 		topLeftMouseClicks = []
@@ -87,8 +96,8 @@ if __name__ == '__main__':
 		)
 
 		#connect the events to the toggleSelector and the keyPress callbacks
-		box = plt.connect('key_press_event', toggleSelector)
-		key = plt.connect('key_press_event', keyPressCallback)
+		boundingBox = plt.connect('key_press_event', toggleSelector)
+		keyPress = plt.connect('key_press_event', keyPressCallback)
 
 		# show the image
 		axis.imshow(tempImage)
