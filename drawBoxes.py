@@ -16,7 +16,7 @@ topLeftMouseClicks = []
 objectsInImage = []
 
 # constants
-imageFolder = 'images' # where the images are
+imageFolder = 'images/kaggle_fire/fire_images/1_50' # where the images are
 saveDirectory = 'annotations' # where the annotations are saved
 obj = 'fire' # the object we're looking for
 
