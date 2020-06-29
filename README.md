@@ -17,9 +17,9 @@
 3. If you added any packages, add them to the `requirements.txt` file, by using the following command: `pip3 freeze > requirements.txt`
 4. Add any new info to the `README` (if necessary)
 5. Once done, commit all the changes and make a Pull Request with the following info:
-  1. What the problem you attempted to solve
-  2. How you did it
-  3. Steps to test
+  5.1 What the problem you attempted to solve
+  5.2 How you did it
+  5.3 Steps to test
 6. Fix any merge conflicts (if any) and send a notification to the team
 7. Wait for 2+ members of the group to approve
 8. Now you can safely merge you branch (***Note: You MUST wait for 2+ approvals***)
