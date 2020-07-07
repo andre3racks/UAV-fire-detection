@@ -1,0 +1,22 @@
+<annotation>
+  <folder>images/kaggle_fire/fire_images/101_150</folder>
+  <filename>fire.111.png</filename>
+  <segmented>0</segmented>
+  <size>
+    <width>390</width>
+    <height>280</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>fire</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>9</xmin>
+      <ymin>184</ymin>
+      <xmax>389</xmax>
+      <ymax>220</ymax>
+    </bndbox>
+  </object>
+</annotation>
