@@ -1,0 +1,22 @@
+<annotation>
+  <folder>images/kaggle_fire/fire_images/701_755</folder>
+  <filename>fire.713.png</filename>
+  <segmented>0</segmented>
+  <size>
+    <width>520</width>
+    <height>340</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>fire</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>227</xmin>
+      <ymin>170</ymin>
+      <xmax>424</xmax>
+      <ymax>270</ymax>
+    </bndbox>
+  </object>
+</annotation>
