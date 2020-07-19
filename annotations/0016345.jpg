@@ -1,0 +1,22 @@
+<annotation>
+  <folder>images/forestry</folder>
+  <filename>0016345.jpg</filename>
+  <segmented>0</segmented>
+  <size>
+    <width>384</width>
+    <height>256</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>fire</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>128</xmin>
+      <ymin>60</ymin>
+      <xmax>196</xmax>
+      <ymax>153</ymax>
+    </bndbox>
+  </object>
+</annotation>
