@@ -1,8 +1,3 @@
-tensorflow==1.4.1
-pytest
-requests
-opencv-python
-numpy
-Cython
-codecov
-pytest-cov
+version https://git-lfs.github.com/spec/v1
+oid sha256:f1e73526ec570d8f257324d221a8360e7ed43ebd8d8946c3030b6d6b5cb751fa
+size 79

@@ -1,11 +1,3 @@
-import numpy as np
-cimport numpy as np
-cimport cython
-ctypedef np.float_t DTYPE_t
-from libc.math cimport exp
-from utils.box import BoundBox
-
-
-cdef NMS(float[:, ::1] , float[:, ::1] )
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:bda2099a59763bd0e55bbb7357fb7167eed851a3c344165e10ee80017e01d157
+size 185

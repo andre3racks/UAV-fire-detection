@@ -1,34 +1,3 @@
-<annotation>
-  <folder>images/kaggle_fire/fire_images/1_50</folder>
-  <filename>fire.49.png</filename>
-  <segmented>0</segmented>
-  <size>
-    <width>700</width>
-    <height>525</height>
-    <depth>3</depth>
-  </size>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>164</xmin>
-      <ymin>320</ymin>
-      <xmax>370</xmax>
-      <ymax>423</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>401</xmin>
-      <ymin>455</ymin>
-      <xmax>681</xmax>
-      <ymax>498</ymax>
-    </bndbox>
-  </object>
-</annotation>
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d163ea4879b7cf9850b160d97b01b31e66a0df9ad4b6804d1c32064140ab88c
+size 734

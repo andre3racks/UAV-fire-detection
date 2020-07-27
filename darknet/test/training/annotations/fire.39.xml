@@ -1,10 +1,3 @@
-<annotation>
-  <folder>images/kaggle_fire/fire_images/1_50</folder>
-  <filename>fire.39.png</filename>
-  <segmented>0</segmented>
-  <size>
-    <width>780</width>
-    <height>439</height>
-    <depth>3</depth>
-  </size>
-</annotation>
+version https://git-lfs.github.com/spec/v1
+oid sha256:9bfe3c86b290e1358166834189a3c0ad23bfdffca51c62c895422401a6c962d8
+size 232
