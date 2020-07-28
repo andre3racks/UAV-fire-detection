@@ -1,5 +1,5 @@
 <annotation>
-  <folder>images/kaggle_fire/fire_images/101_150</folder>
+  <folder>images/kaggle_fire/test/1/106-120</folder>
   <filename>fire.117.png</filename>
   <segmented>0</segmented>
   <size>
@@ -7,40 +7,4 @@
     <height>319</height>
     <depth>3</depth>
   </size>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>134</xmin>
-      <ymin>137</ymin>
-      <xmax>248</xmax>
-      <ymax>226</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>268</xmin>
-      <ymin>77</ymin>
-      <xmax>388</xmax>
-      <ymax>191</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>394</xmin>
-      <ymin>154</ymin>
-      <xmax>452</xmax>
-      <ymax>188</ymax>
-    </bndbox>
-  </object>
 </annotation>

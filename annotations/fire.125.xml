@@ -1,5 +1,5 @@
 <annotation>
-  <folder>images/kaggle_fire/fire_images/101_150</folder>
+  <folder>images/kaggle_fire/test/2</folder>
   <filename>fire.125.png</filename>
   <segmented>0</segmented>
   <size>
@@ -13,82 +13,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>701</xmin>
-      <ymin>304</ymin>
-      <xmax>787</xmax>
-      <ymax>341</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>821</xmin>
-      <ymin>271</ymin>
-      <xmax>971</xmax>
-      <ymax>314</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>943</xmin>
-      <ymin>362</ymin>
+      <xmin>680</xmin>
+      <ymin>269</ymin>
       <xmax>999</xmax>
-      <ymax>390</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>467</xmin>
-      <ymin>384</ymin>
-      <xmax>544</xmax>
-      <ymax>437</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>273</xmin>
-      <ymin>455</ymin>
-      <xmax>340</xmax>
-      <ymax>488</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>236</xmin>
-      <ymin>421</ymin>
-      <xmax>295</xmax>
-      <ymax>432</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>fire</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>164</xmin>
-      <ymin>447</ymin>
-      <xmax>208</xmax>
-      <ymax>473</ymax>
+      <ymax>412</ymax>
     </bndbox>
   </object>
 </annotation>

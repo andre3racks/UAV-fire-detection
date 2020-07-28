@@ -1,0 +1,10 @@
+<annotation>
+  <folder>images/kaggle_fire/test/2</folder>
+  <filename>fire.448.png</filename>
+  <segmented>0</segmented>
+  <size>
+    <width>800</width>
+    <height>600</height>
+    <depth>3</depth>
+  </size>
+</annotation>

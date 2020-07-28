@@ -1,5 +1,5 @@
 <annotation>
-  <folder>images/kaggle_fire/fire_images/101_150</folder>
+  <folder>images/kaggle_fire/test/2</folder>
   <filename>fire.147.png</filename>
   <segmented>0</segmented>
   <size>
@@ -13,10 +13,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>292</xmin>
-      <ymin>147</ymin>
-      <xmax>484</xmax>
-      <ymax>380</ymax>
+      <xmin>267</xmin>
+      <ymin>161</ymin>
+      <xmax>497</xmax>
+      <ymax>362</ymax>
     </bndbox>
   </object>
 </annotation>
